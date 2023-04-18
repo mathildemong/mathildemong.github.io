@@ -1,0 +1,76 @@
+$vert: rgb(79, 198, 43);
+$p_mt: 10px;
+
+p {
+  color: $vert;
+  margin-top: $p_mt;
+}
+
+ul {
+  background-color: rgb(13, 0, 255);
+  li {
+    color: $vert;
+    a {
+      text-decoration: none;
+    }
+  }
+}
+
+a {
+  color: purple;
+  &:hover {
+    color: $vert;
+  }
+}
+
+$rayon: 50%;
+
+@mixin toto($rayon) {
+  border-radius: $rayon;
+  -webkit-border-radius: $rayon;
+  -moz-border-radius: $rayon;
+  -ms-border-radius: $rayon;
+  -o-border-radius: $rayon;
+}
+
+.box1 {
+  @include toto($rayon);
+}
+
+.box2 {
+  @include toto(10px);
+}
+
+.card-women {
+  @include toto(18px);
+}
+
+section {
+  div {
+    background-color: $vert;
+    color: #fff;
+    display: flex;
+    p {
+      color: #fff;
+      a {
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+@mixin flexy($g, $direction) {
+  display: flex;
+  gap: $g;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+div {
+  @include flexy(10px);
+}
+
+p {
+  @include flexy(20px);
+}

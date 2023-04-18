@@ -1,0 +1,29 @@
+// MIXIN button_color
+@mixin button_color($couleur) {
+  background-color: $couleur;
+  padding: 10px 15px;
+  text-decoration: none;
+  &:hover {
+    background-color: darken($couleur, 20%);
+  }
+  &:active {
+    background-color: darken($couleur, 30%);
+    color: #fff;
+  }
+}
+
+.btn-green {
+  @include button_color(#40d23d);
+}
+
+.btn-blue {
+  @include button_color(#4460be);
+}
+
+.btn-yellow {
+  @include button_color(#e7e71d);
+}
+
+.btn-red {
+  @include button_color(#ff0000);
+}

@@ -1,0 +1,79 @@
+p {
+  color: rgb(79, 198, 43);
+  margin-top: 10px;
+}
+
+ul {
+  background-color: rgb(13, 0, 255);
+}
+ul li {
+  color: rgb(79, 198, 43);
+}
+ul li a {
+  text-decoration: none;
+}
+
+a {
+  color: purple;
+}
+a:hover {
+  color: rgb(79, 198, 43);
+}
+
+.box1 {
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+.box2 {
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+.card-women {
+  border-radius: 18px;
+  -webkit-border-radius: 18px;
+  -moz-border-radius: 18px;
+  -ms-border-radius: 18px;
+  -o-border-radius: 18px;
+}
+
+section div {
+  background-color: rgb(79, 198, 43);
+  color: #fff;
+  display: flex;
+}
+section div p {
+  color: #fff;
+}
+section div p a {
+  text-decoration: underline;
+}
+
+div {
+  display: flex;
+  gap: 10px;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+p {
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.text-secondary {
+  color: rgb(180, 110, 110);
+}
+
+/*# sourceMappingURL=style.css.map */
